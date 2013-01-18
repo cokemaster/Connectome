@@ -1,6 +1,5 @@
 function attempts2
-<<<<<<< HEAD
-    N = 128;
+    N = 64;
     k = 1000;
     %CIJ = makerandCIJ_und(N,k);
     %in = [1, 2, 3, 4, 1, 3, 5, 3, 4, 3, 1];
