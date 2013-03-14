@@ -1,7 +1,8 @@
 function attempts(folder)
-    f_fullname = strcat('C:\Users\Acer\Documents\Мозги\', folder, '\fullname.txt');
-    f_hierarchy = strcat('C:\Users\Acer\Documents\Мозги\', folder, '\hierarchy.txt');
-    f_connectome = strcat('C:\Users\Acer\Documents\Мозги\', folder, '\connectome.txt');
+    long_part = 'C:\Users\Acer\Documents\Мозги\';
+    f_fullname = strcat(long_part, folder, '\fullname.txt');
+    f_hierarchy = strcat(long_part, folder, '\hierarchy.txt');
+    f_connectome = strcat(long_part, folder, '\connectome.txt');
     disp('importing connctome...');
     [nodes, CIJ, hier] = import_connectome(f_fullname, f_hierarchy, f_connectome);
     %degrees
